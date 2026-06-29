@@ -93,12 +93,6 @@ MIT License (add a LICENSE file if you haven’t already).
 
 ---
 
-## 💡 Screenshots
-
-Add screenshots of the UI here for a better showcase!
-
----
-
 ## 🤝 Contributions
 
 Pull requests and suggestions are welcome!
