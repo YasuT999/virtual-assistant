@@ -44,16 +44,16 @@ Make sure you have Python 3.7+ installed. Install the required packages:
 pip install -r requirements.txt
 ```
 
-If there's no `requirements.txt`, you can install manually:
+Install the required packages:
 
 ```bash
-pip install streamlit speechrecognition pyttsx3 streamlit-option-menu requests-html
+pip install -r requirements.txt
 ```
 
 ### 3. Run the Assistant
 
 ```bash
-streamlit run gui7.py
+streamlit run src/main.py
 ```
 
 ---
