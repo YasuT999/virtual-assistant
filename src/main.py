@@ -3,6 +3,7 @@ from datetime import datetime
 from streamlit_option_menu import option_menu
 
 from assistant import Assistant
+from services import WEB_SERVICES
 from speech import speech_to_text, text_to_speech
 
 
@@ -96,6 +97,5 @@ elif choice == "About":
     """)
 
     st.subheader("🔗 Useful Links")
-    st.markdown("[🌍 Google](https://google.com)")
-    st.markdown("[🎵 Spotify](https://open.spotify.com)")
-    st.markdown("[📺 YouTube](https://youtube.com)")
+    for service in WEB_SERVICES:
+        st.markdown(f"[🌍 {service.name}]({service.url})")

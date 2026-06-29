@@ -15,6 +15,7 @@ src/
   __init__.py
   main.py       Streamlit UI entrypoint
   assistant.py  Assistant class with intent dispatch
+  services.py   WebService dataclass and service definitions
   speech.py     speech_to_text / text_to_speech (singleton engine)
 ```
 

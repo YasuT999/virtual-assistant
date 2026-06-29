@@ -1,7 +1,3 @@
-Here’s a detailed and readable README.md based on your gui7.py file and the project context.
-
----
-
 # Virtual Assistant – Alice
 
 **Voice control using AI**  
@@ -87,7 +83,7 @@ streamlit run src/main.py
 ## 👤 Author
 
 Created by [pepakayala]  
-Repository maintained by [yaswanth-dev143](https://github.com/yaswanth-dev143)
+Repository maintained by [yasuT999](https://github.com/yasuT999)
 
 ---
 
@@ -110,7 +106,3 @@ Pull requests and suggestions are welcome!
 ---
 
 **Enjoy talking to Alice, your cheerful virtual assistant!**
-
----
-
-Let me know if you want to add custom sections or more examples.

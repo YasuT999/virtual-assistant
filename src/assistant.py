@@ -2,6 +2,8 @@ import random
 import webbrowser
 from datetime import datetime
 
+from services import WEB_SERVICES
+
 
 class Assistant:
     def __init__(self, name: str = "Alice") -> None:
@@ -26,18 +28,12 @@ class Assistant:
             return "Good afternoon! What can I help you with?"
         if "shutdown" in text:
             return "Alright, shutting down. See you soon!"
-        if "play music" in text:
-            webbrowser.open("https://open.spotify.com")
-            return "Spotify is all set! Enjoy your tunes 🎶"
-        if "youtube" in text:
-            webbrowser.open("https://youtube.com")
-            return "YouTube is ready for you!"
-        if "chatgpt" in text:
-            webbrowser.open("https://chatgpt.com")
-            return "Opening ChatGPT for you!"
-        if "google" in text:
-            webbrowser.open("https://google.com")
-            return "Google is at your service!"
+
+        for service in WEB_SERVICES:
+            if any(kw in text for kw in service.keywords):
+                webbrowser.open(service.url)
+                return service.response
+
         if "time now" in text:
             now = datetime.now()
             return f"The current time is {now.strftime('%H:%M:%S')}"
